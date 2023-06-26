@@ -40,5 +40,5 @@ async function bootstrap() {
   });
 }
 
-bootstrap();
-module.exports = bootstrap;
+// bootstrap();
+module.exports = bootstrap()

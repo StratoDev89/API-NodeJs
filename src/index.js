@@ -29,7 +29,6 @@ async function bootstrap() {
   await database(
     config.dbConnection,
     config.dbHost,
-    config.dbPort,
     config.dbUser,
     config.dbPassword,
     config.dbName

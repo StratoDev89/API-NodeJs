@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
-const database = async (connection, host, port, user, password, db) => {
+const database = async (connection, host, user, password, db) => {
   try {
-    const URI = `${connection}://${host}:${port}`;
+    const URI = `${connection}://${host}`;
     await mongoose.connect(URI, {
       user,
       pass: password,

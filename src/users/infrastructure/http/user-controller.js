@@ -43,7 +43,7 @@ class UserController {
       const user = await this.updateUser.run(id, changes);
       res
         .status(200)
-        .json({ message: "update endpoint OK", userUpdated: true, user });
+        .json({ message: "update endpoint OK", user });
     } catch (error) {
       next(error);
     }

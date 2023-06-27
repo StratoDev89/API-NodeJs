@@ -10,7 +10,7 @@ const database = async (connection, host, user, password, db) => {
     });
     console.log("Successful connection to MongoAtlas Database");
   } catch (error) {
-    console.log("Failed connection to Atlas Database");
+    console.log("Failed connection to MongoAtlas Database");
   }
 };
 

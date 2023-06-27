@@ -16,7 +16,7 @@ userRouter.post(
   userController.create.bind(userController)
 );
 
-userRouter.get("/", authHandler, userController.getAll.bind(userController));
+userRouter.get("/", userController.getAll.bind(userController));
 
 userRouter.get(
   "/current",
